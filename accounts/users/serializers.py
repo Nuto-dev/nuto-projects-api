@@ -28,3 +28,7 @@ class UserSerializer(serializers.ModelSerializer):
             instance.set_password(password)
 
         return super(UserSerializer, self).update(instance, validated_data)
+
+class LoginSerializer(serializers.Serializer):
+    email = serializers.EmailField(required=True)
+    password = serializers.CharField(max_length=128, required=True)

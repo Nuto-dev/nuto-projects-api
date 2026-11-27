@@ -2,7 +2,7 @@
 
 .idea/
 
-/migrations
+migrations/
 
 .env
 .env.*
