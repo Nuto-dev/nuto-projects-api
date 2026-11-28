@@ -1,3 +1,2 @@
-from django.db import models
-
-# Create your models here.
+from workspace.space.models import *
+from workspace.relations.models import *
